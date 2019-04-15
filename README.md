@@ -16,7 +16,7 @@ I employed JavaScript, Node.js, MochaJS, and ChaiJS to build common abstract dat
 * [Heaps](#heaps)
 * [Usage](#usage)
 
-# Associative Arrays (JavaScript Objects):
+# Associative Arrays:
 
 * 
 
