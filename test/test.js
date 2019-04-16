@@ -27,7 +27,7 @@ describe("Associative Array", () => {
         expect(cats.get("Bastet")).to.equal("Goddess"); // Reassigned
     });
     // Test the ability of the Associative Array to remove key-value pairs
-    it("Should reassign a new value to an existing key", () => {
+    it("Should remove a key-value pair", () => {
         cats.remove("Blueberry");
         expect(cats.get("Prismo")).to.equal("tortoise-shell"); // No change
         expect(cats.get("George")).to.equal("mackerel tabbie"); // No change
