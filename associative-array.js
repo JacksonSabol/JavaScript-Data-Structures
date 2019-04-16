@@ -1,6 +1,5 @@
-// Using ES5 notation until Babel is set up
 // Define a class AssociativeArray as a constructor
-class AssociativeArray {
+export default class AssociativeArray {
     constructor() {
         // Define the buckets to be filled by the constructor
         this.buckets = [];
@@ -43,7 +42,3 @@ class AssociativeArray {
         delete this.buckets[this.hash(key)];
     }
 }
-// Export the class
-module.exports = {
-    AssociativeArray
-};

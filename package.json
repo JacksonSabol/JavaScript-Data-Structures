@@ -4,7 +4,7 @@
   "description": "An In-Progress collection of common abstract data types/structures and algorithms built with ECMAScript 2015+.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require @babel/polyfill --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/JacksonSabol/JavaScript-Data-Structures#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
     "chai": "^4.2.0",
     "mocha": "^6.1.3"
   }

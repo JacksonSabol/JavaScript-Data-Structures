@@ -187,13 +187,13 @@ module.exports = {
 * Clone this repository to the filepath of your choice on your local drive.
 * Install the dependencies listed in the package.json file by typing ```npm i``` into the shell of your choice
 * Execute ```npm run test``` in the shell to see the results of each data structure constructed
-* Navigate into each folder and execute ```node <data-structure-name>.js``` to see the results of various operations using each type of data structure
 
 Thank you for reading!
 
 ### Built With:
 * JavaScript
 * Node.js
+* Babel
 * Mocha
 * Chai
 * GitHub
