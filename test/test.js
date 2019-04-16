@@ -1,6 +1,7 @@
 // Import dependencies - Chai 'Expect' Guide: https://www.chaijs.com/guide/styles/#expect
 const expect = require("chai").expect;
-const AssociativeArray = require("../associative-array");
+// Babel isn't set up yet so we'll use ES5 notation
+const AssociativeArray = require("../associative-array").AssociativeArray;
 
 // Describe the tests for a properly functioning Associative Array
 describe("Associative Array", () => {
