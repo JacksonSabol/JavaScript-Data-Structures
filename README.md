@@ -35,13 +35,25 @@ A JavaScript object most closely resembles an implementation of an associative a
 * [Associative Array (Wikipedia)](https://en.wikipedia.org/wiki/Associative_array)
 * [Hash Table (Wikipedia)](https://en.wikipedia.org/wiki/Hash_table)
 * JavaScript Object Big O Performance Tests on Various Browsers [1](https://stackoverflow.com/questions/12241676/javascript-objects-as-hashes-is-the-complexity-greater-than-o1), [2](https://stackoverflow.com/questions/28329869/javascript-object-big-o)
-* [Link to code]()
-## ![](AADemo.jpg)
-
+* Polynomial string hash derived from the [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
+* [Link to code](./associative-array.js)
+## Tests:
+## ![Tests](./img/AADemo.png)
+## Code Snippet:
  ``` javascript
 class AssociativeArray {
     constructor () {
         this.buckets = [];
+    }
+    hash(key) {
+        let n = key.length - 1;
+        let prime = 179424691;
+        let hash = Array.from(key);
+        for (let i = 0; i < key.length; i++) {
+            hash += (key.charCodeAt(i) * (prime ^ n)) % key.length;
+            n--
+        }
+        return hash;
     }
 }
 module.exports = {
@@ -54,7 +66,7 @@ ___
 
 * 
 
-## ![](GDemo.jpg)
+## ![](GDemo.png)
 
  ``` javascript
 class Graph {
@@ -71,7 +83,7 @@ module.exports = {
 
 * 
 
-## ![](LLDemo.jpg)
+## ![](LLDemo.png)
 
  ``` javascript
 class LinkedList {
@@ -88,7 +100,7 @@ module.exports = {
 
 * 
 
-## ![](QDemo.jpg)
+## ![](QDemo.png)
 
  ``` javascript
 class Queue {
@@ -105,7 +117,7 @@ module.exports = {
 
 * 
 
-## ![](PQDemo.jpg)
+## ![](PQDemo.png)
 
  ``` javascript
 class PriorityQueue {
@@ -122,7 +134,7 @@ module.exports = {
 
 * 
 
-## ![](SDemo.jpg)
+## ![](SDemo.png)
 
  ``` javascript
 class Stack {
@@ -139,7 +151,7 @@ module.exports = {
 
 * 
 
-## ![](TDemo.jpg)
+## ![](TDemo.png)
 
  ``` javascript
 class Tree {
@@ -156,7 +168,7 @@ module.exports = {
 
 * 
 
-## ![](HDemo.jpg)
+## ![](HDemo.png)
 
  ``` javascript
 class Heap {
