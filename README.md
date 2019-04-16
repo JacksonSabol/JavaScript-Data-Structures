@@ -17,9 +17,25 @@ I employed JavaScript, Node.js, MochaJS, and ChaiJS to build common abstract dat
 * [Usage](#usage)
 
 # Associative Arrays:
+An associative array (sometimes called a hash map, a hash table, a symbol table, or a dictionary) is what's behind the "object" in JavaScript. On a high level, it is an abstract data type composed of a collection of key-value pairs, such that each possible key appears at most once in the collection.
 
-* 
-
+Put another way, the operations associated with this data type allow for:
+* the addition of a pair to the collection - O(1)
+* the removal of a pair from the collection - O(1)
+* the modification of an existing pair - O(1)
+* the lookup of a value associated with a particular key - O(1)
+###### *Speeds expressed in average times and may vary depending on browser engine*
+A JavaScript object most closely resembles an implementation of an associative array known as the hash table (hence the overlap in naming). A hash table is an array that utilizes a hash function to generate (hopefully) unique keys for any value passed into it. A good hash function is one that avoids hash collisions while not taking up too much space. As such, a proper implementation of an associative array should allow for constant time set, get, and remove operations, and therefore pass the following tests:
+* Set a key-value pair without collisions
+* Get a value associated with a key after it has been set
+* Reassign the value of a key after it has been set
+* Get a new value associated with a key after it has been reassigned
+* Remove a key-value pair
+## Resources/Links:
+* [Associative Array (Wikipedia)](https://en.wikipedia.org/wiki/Associative_array)
+* [Hash Table (Wikipedia)](https://en.wikipedia.org/wiki/Hash_table)
+* JavaScript Object Big O Performance Tests on Various Browsers [1](https://stackoverflow.com/questions/12241676/javascript-objects-as-hashes-is-the-complexity-greater-than-o1), [2](https://stackoverflow.com/questions/28329869/javascript-object-big-o)
+* [Link to code]()
 ## ![](AADemo.jpg)
 
  ``` javascript
@@ -32,6 +48,7 @@ module.exports = {
     AssociativeArray: AssociativeArray
 }
  ```
+___
 
 # Graphs:
 
