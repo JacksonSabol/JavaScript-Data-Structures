@@ -33,4 +33,18 @@ describe("Associative Array", () => {
         expect(cats.get("George")).to.equal("mackerel tabbie"); // No change
         expect(cats.get("Blueberry")).to.equal(false); // Removed
     });
+    // Test the ability of the Associative Array constructor to avoid collisions by adding anagrams
+    it("Should avoid collisions from anagrams", () => {
+        cats.set("isabel", "russian blue");
+        cats.set("blaise", "savannah cat");
+        expect(cats.get("isabel")).to.equal("russian blue");
+        expect(cats.get("blaise")).to.equal("savannah cat");
+    });
+    // Test the case sensitivity of the Associative Array's hash function
+    it("Should avoid collisions from capitalized/uncapitalized keys", () => {
+        expect(cats.get("isabel")).to.equal("russian blue");
+        expect(cats.get("Isabel")).to.equal(false);
+        expect(cats.get("Prismo")).to.equal("tortoise-shell");
+        expect(cats.get("prismo")).to.equal(false);
+    });
 });

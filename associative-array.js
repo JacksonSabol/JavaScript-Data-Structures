@@ -7,7 +7,7 @@ class AssociativeArray {
     }
     // Define the hash function
     hash(key) {
-        // √ √ √ Passes all 3 tests
+        // √ √ √ √ √ Passes all 5 tests
         // Define a polynomial string hash derived from the Rabin-Karp algorithm - https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm
         let n = key.length - 1;
         let prime = 179424691;
@@ -18,7 +18,7 @@ class AssociativeArray {
         }
         return hash;
 
-        // √ √ √ Passes all 3 tests
+        // √ √ √ √ √ Passes all 5 tests
         // Java.lang.String.hashCode method: https://www.tutorialspoint.com/java/lang/string_hashcode.htm
         // Implemented by Anatol Marezhanyi: https://github.com/e1r0nd/data-sctructures/blob/64b72ba5008c8a8c1a7ebd80f34798149d22144c/hashtable.js#L12
         // hash(key, hash = 0) {
