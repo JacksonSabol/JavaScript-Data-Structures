@@ -41,7 +41,7 @@ A JavaScript object most closely resembles an implementation of an associative a
 ## ![Tests](./img/AADemo.png)
 ## Code Snippet:
  ``` javascript
-class AssociativeArray {
+export default class AssociativeArray {
     constructor () {
         this.buckets = [];
     }
@@ -55,9 +55,6 @@ class AssociativeArray {
         }
         return hash;
     }
-}
-module.exports = {
-    AssociativeArray: AssociativeArray
 }
  ```
 ___
