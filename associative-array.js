@@ -6,7 +6,9 @@ export default class AssociativeArray {
     }
     // Define the hash function
     hash(key) {
-        // √ √ √ √ √ Passes all 5 tests
+        // √ √ √ √ √ √ Passes all 6 tests
+        // Cast to string so hash function can accept non-string primitize data types as keys
+        key = key.toString();
         // Define a polynomial string hash derived from the Rabin-Karp algorithm - https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm
         let n = key.length - 1;
         let prime = 179424691;
@@ -16,16 +18,6 @@ export default class AssociativeArray {
             n--
         }
         return hash;
-
-        // √ √ √ √ √ Passes all 5 tests
-        // Java.lang.String.hashCode method: https://www.tutorialspoint.com/java/lang/string_hashcode.htm
-        // Implemented by Anatol Marezhanyi: https://github.com/e1r0nd/data-sctructures/blob/64b72ba5008c8a8c1a7ebd80f34798149d22144c/hashtable.js#L12
-        // hash(key, hash = 0) {
-        // for (let i = 0; i < key.length; i++) {
-        //     hash = ((hash << 5) - hash) + key.charCodeAt(i) | 0;
-        //     hash &= hash;
-        // }
-        // return hash;
     }
     // Define the set method, which takes in a key and a value
     set(key, value) {

@@ -46,4 +46,19 @@ describe("Associative Array", () => {
         expect(cats.get("Prismo")).to.equal("tortoise-shell");
         expect(cats.get("prismo")).to.equal(false);
     });
+    // Test the ability of the Associative Array's hash function to handle non-string inputs
+    it("Should be able to accept non-string primitive data types in the hash function", () => {
+        cats.set(1234, "forest cat");
+        cats.set(4321, "reverse forest cat");
+        cats.set(true, "truthy toothy cat");
+        cats.set(false, "falsy froath cat");
+        cats.set([1, 2, 3, 4], "array cat");
+        cats.set([4, 3, 2, 1], "reverse array cat");
+        expect(cats.get(1234)).to.equal("forest cat");
+        expect(cats.get(4321)).to.equal("reverse forest cat");
+        expect(cats.get(true)).to.equal("truthy toothy cat");
+        expect(cats.get(false)).to.equal("falsy froath cat");
+        expect(cats.get([1, 2, 3, 4])).to.equal("array cat");
+        expect(cats.get([4, 3, 2, 1])).to.equal("reverse array cat");
+    });
 });
