@@ -1,0 +1,24 @@
+{
+  "name": "JavaScript-Data-Structures",
+  "version": "1.0.0",
+  "description": "An In-Progress collection of common abstract data types/structures and algorithms built with ECMAScript 2015+.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonSabol/JavaScript-Data-Structures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacksonSabol/JavaScript-Data-Structures/issues"
+  },
+  "homepage": "https://github.com/JacksonSabol/JavaScript-Data-Structures#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.3"
+  }
+}
