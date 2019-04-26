@@ -3,7 +3,7 @@
 
 ### The following project is an In-Progress collection of common abstract data types/structures and algorithms built with ECMAScript 2015+.
 
-I employed JavaScript, Node.js, MochaJS, and ChaiJS to build common abstract data structures. The repository will cover Associative Arrays (JavaScript Objects), Graphs, Linked Lists, Queues, Priority Queues, Stacks, Trees, and Heaps.
+I employed JavaScript, Node.js, JestJS, MochaJS, and ChaiJS to build common abstract data structures. The repository will cover Associative Arrays (JavaScript Objects), Graphs, Linked Lists, Queues, Priority Queues, Stacks, Trees, and Heaps.
 
 # Contents:
 * [Associative Arrays](#associative-arrays)
