@@ -237,6 +237,7 @@ module.exports = {
 * Clone this repository to the filepath of your choice on your local drive.
 * Install the dependencies listed in the package.json file by typing ```npm i``` into the shell of your choice
 * Execute ```npm run test``` in the shell to see the results of each data structure constructed
+* For switching to Mocha + Chai testing suites, change the ```"scripts": { "test": }``` line to ```"test": "mocha --require @babel/polyfill --require @babel/register"```
 
 Thank you for reading!
 

@@ -4,7 +4,12 @@
   "description": "An In-Progress collection of common abstract data types/structures and algorithms built with ECMAScript 2015+.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/polyfill --require @babel/register"
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -23,7 +28,9 @@
     "@babel/polyfill": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
+    "babel-jest": "^24.7.1",
     "chai": "^4.2.0",
-    "mocha": "^6.1.3"
+    "jest": "^24.7.1",
+    "mocha": "^6.1.4"
   }
 }
